@@ -1,0 +1,14 @@
+syntax = "proto3";
+package ignitecosmoshello.ignitecosmoshello;
+
+import "gogoproto/gogo.proto";
+import "ignitecosmoshello/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "ignite-cosmos-hello/x/ignitecosmoshello/types";
+
+// GenesisState defines the ignitecosmoshello module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
